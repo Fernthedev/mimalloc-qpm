@@ -141,8 +141,8 @@ jobs:
           # ./QPM/QPM package edit-extra "debugSoLink" "${{ steps.upload_debug_asset.outputs.browser_download_url }}"
       - name: Commit Changed package info
         run: |
-          git add qpm.json
-          git commit -m "Updated qpm.json"
+          git add qpm.json include --force
+          git commit -m "Updated qpm.json and add headers"
 
       # Then, we want to use the commit we have just made, and force push our tag to that commit
       - name: Get Commit ID
