@@ -130,7 +130,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.get_upload_url.outputs.upload_url }}
-          asset_path: ./libs/arm64-v8a/${{ steps.libname.outputs.NAME }}
+          asset_path: ${{ steps.libname.outputs.NAME }}
           asset_name: ${{ steps.libname.outputs.NAME }}
           asset_content_type: application/octet-stream
 
