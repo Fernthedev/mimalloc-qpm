@@ -1,0 +1,15 @@
+{
+  "sharedDir": "include",
+  "dependenciesDir": "extern",
+  "info": {
+    "name": "mimalloc",
+    "id": "mimalloc",
+    "version": "0.1.0",
+    "url": "https://github.com/Fernthedev/mimalloc-qpm",
+    "additionalData": {
+      "staticLinking": true
+    }
+  },
+  "dependencies": [],
+  "additionalData": {}
+}
