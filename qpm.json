@@ -7,7 +7,9 @@
     "version": "0.1.2",
     "url": "https://github.com/Fernthedev/mimalloc-qpm",
     "additionalData": {
-      "staticLinking": true
+      "staticLinking": true,
+      "branchName": "version-v0.1.2",
+      "soLink": "https://github.com/Fernthedev/mimalloc-qpm/releases/download/v0.1.2/libmimalloc.a"
     }
   },
   "dependencies": [],
