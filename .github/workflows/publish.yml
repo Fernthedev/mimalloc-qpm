@@ -57,11 +57,6 @@ jobs:
           chmod +x ./QPM/QPM
           ./QPM/QPM restore
 
-      - name: List Post Restore
-        run: |
-          ls -la ${GITHUB_WORKSPACE}/extern/
-          ls -la QPM_Temp
-
       - name: Get Tag Version
         id: get_tag_version
         run: |
