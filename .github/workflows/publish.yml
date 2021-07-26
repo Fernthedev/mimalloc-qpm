@@ -48,7 +48,8 @@ jobs:
           workflow: main.yml
           name: QPM-ubuntu-x64
           path: QPM
-          repo: sc2ad/QuestPackageManager
+          branch: static-libs
+          repo: Fernthedev/QuestPackageManager
 
       - name: Get Tag Version
         id: get_tag_version
