@@ -51,6 +51,15 @@ jobs:
           branch: static-libs
           repo: Fernthedev/QuestPackageManager
 
+      - name: QPM Restore
+        #       if: steps.cache-qpm-deps.outputs.cache-hit != 'true'
+        run: ./QPM/QPM restore
+
+      - name: List Post Restore
+        run: |
+          ls -la ${GITHUB_WORKSPACE}/extern/
+          ls -la QPM_Temp
+
       - name: Get Tag Version
         id: get_tag_version
         run: |
