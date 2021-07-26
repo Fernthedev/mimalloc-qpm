@@ -53,7 +53,9 @@ jobs:
 
       - name: QPM Restore
         #       if: steps.cache-qpm-deps.outputs.cache-hit != 'true'
-        run: ./QPM/QPM restore
+        run: |
+          chmod +x ./QPM/QPM
+          ./QPM/QPM restore
 
       - name: List Post Restore
         run: |
