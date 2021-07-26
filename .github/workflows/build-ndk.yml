@@ -52,6 +52,7 @@ jobs:
       - name: Build
         run: |
           cd ${GITHUB_WORKSPACE}
+          chmod +x ./build.sh
           ./build.sh
       - name: Get Library Name
         id: libname
